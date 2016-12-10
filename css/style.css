@@ -1,0 +1,367 @@
+html, body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.random {
+    position: absolute;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/background.png);
+}
+
+#exhibition-container {
+    width: 100%;
+    height: 770px;
+    overflow: hidden;
+    background: url(../images/background.png);
+}
+
+#competition-container {
+
+    background: url(../images/background.png);
+}
+
+#link1 {
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    position: fixed;
+    -webkit-transform: rotate(270deg);
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    font-size: 1.5em;
+    color: black;
+    top: 400px;
+}
+
+#link1:hover {
+    color: #ff7236;
+}
+
+#link2 {
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    position: fixed;
+    -webkit-transform: rotate(90deg);
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    font-size: 1.5em;
+    color: black;
+    top: 370px;
+    left: 91%;
+}
+
+#link2:hover {
+    color: #2caafa;
+}
+
+#cover {
+  height: 500px;
+  width: 100%;
+}
+
+#logo {
+  background: url(../images/logo-05.png) no-repeat;
+  width: 150px;
+  height: 150px;
+  top: 30px;
+  left: 30px;
+  position: fixed;
+}
+
+.title {
+  padding-top: 350px;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#info {
+    margin-top: 350px;
+    padding-bottom: 220px;
+}
+
+.brief {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  width: 600px;
+  margin: auto;
+  margin-top: -100px;
+  line-height: 1.8em;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+    padding-left: 10%;
+    font-size: 0.8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    width: 90%;
+}
+
+#footer-left {
+    float: left;
+    padding-top: 16px;
+}
+
+#social {
+    float: left;
+    margin-left: 30%;
+    padding-top: 10px;
+    width: 20%;
+}
+
+#facebook {
+    margin-left: 3%;
+}
+
+#twitter {
+    margin-left: 3%;
+}
+
+
+.exhibition {
+    margin-top: 100px;
+
+}
+
+#slides {
+    display: none;
+    margin-left: 300px;
+    width: 650px;
+}
+
+#slides .slidesjs-navigation {
+  margin-top: 10px;
+
+}
+
+.slidesjs-previous {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/arrow-01.png");
+  float: left;
+  position: absolute;
+  top: 400px;
+  left: 225px;
+}
+
+.slidesjs-previous:hover {
+    background-image: url("../images/arrow-02.png");
+}
+
+.slidesjs-next {
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/arrow-04.png");
+  float: left;
+  position: absolute;
+  top: 400px;
+  left: 995px;
+}
+
+.slidesjs-next:hover {
+    background-image: url("../images/arrow-03.png");
+}
+
+.slidesjs-pagination {
+  float: right;
+  list-style: none;
+  position: absolute;
+  top: 600px;
+  left: 1000px;
+  text-decoration: none;
+  display: none;
+}
+
+#des1 {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 530px;
+    height: 330px;
+    padding-left: 30px;
+    padding-right: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+#des2 {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 570px;
+    height: 330px;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+#des3 {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 560px;
+    height: 330px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+
+.arrow {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #000;
+    margin: auto;
+    margin-top: 60px;
+    -webkit-animation: move 2s infinite;
+}
+
+@-webkit-keyframes move {
+    0% { top: 0px; }
+    50% { top: 20px; }
+    100% { top: 0px; }
+
+}
+
+#brief {
+    text-align: left;
+    margin: auto;
+    margin-top: 150px;
+    padding-bottom: 200px;
+    width: 700px;
+}
+
+
+#submission {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    border-bottom: 1px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding-bottom: 10px;
+    top: 1680px;
+}
+
+#submission:hover {
+    color: #2caafa;
+
+}
+
+
+@-webkit-keyframes green {
+    0% { color: black; }
+    15% { color: black; }
+    20% { color: #95ba44; }
+    40% { color: #95ba44; }
+    50% { color: black; }
+    100% { color: black; }
+
+}
+
+@-webkit-keyframes blue {
+    0% { color: black; }
+    15% { color: black; }
+    20% { color: #2caafa; }
+    40% { color: #2caafa; }
+    50% { color: black; }
+    100% { color: black; }
+
+}
+
+@-webkit-keyframes red {
+    0% { color: black; }
+    15% { color: black; }
+    20% { color: #ff7236; }
+    40% { color: #ff7236; }
+    50% { color: black; }
+    100% { color: black; }
+
+}
+
+#seven {
+    position: relative;
+    top: 350px;
+    left: -370px;
+    -webkit-animation: green 5s infinite;
+}
+
+#d {
+    position: relative;
+    top: 230px;
+    left: -150px;
+    -webkit-animation: red 5s infinite;
+    animation-delay: 1s;
+}
+
+#f {
+    position: relative;
+    top: 110px;
+    left: 70px;
+    -webkit-animation: red 5s infinite;
+    animation-delay: 1.5s;
+}
+
+#s {
+    position: relative;
+    top: -10px;
+    left: 310px;
+    -webkit-animation: red 5s infinite;
+    animation-delay: 2s;
+}
+
+#c {
+    position: relative;
+    top: -30px;
+    -webkit-animation: blue 5s infinite;
+    animation-delay: 3s;
+}
